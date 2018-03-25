@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weteam.weteam.dziennikprzedszkolaka.teacher.TeacherMenuActivity"
+    android:background="#A8DFF5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/teacher_menu"
+            android:textSize="36sp"
+            android:layout_marginBottom="100dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/edit_information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="editInformation" android:background="#0090ff"
+                android:textColor="#FFFFFF"
+                />
+
+            <Button
+                android:id="@+id/viewGroup"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/group_details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewGroupDetails" />
+
+            <Button
+                android:id="@+id/viewPreschool"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/preschool_details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewPreschoolDetails" />
+
+            <Button
+                android:id="@+id/createPreschoolGroup"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/create_preschool_group"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="createPreschoolGroup" />
+
+            <Button
+                android:id="@+id/deletePreschoolGroup"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/delete_preschool_group"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="deletePreschoolGroup" />
+
+            <Button
+                android:id="@+id/viewFoodMenu"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/food_menu"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewFoodMenu" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

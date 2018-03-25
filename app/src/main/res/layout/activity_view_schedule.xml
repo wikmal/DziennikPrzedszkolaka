@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weteam.weteam.dziennikprzedszkolaka.ViewScheduleActivity"
+    android:background="#A8DFF5"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="casual"
+            android:text="@string/schedule"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/pon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monday"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/poniedzialek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/wt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tuesday"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/wtorek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wednesday"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sroda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/cz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thursday"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/czwartek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friday"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/piatek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

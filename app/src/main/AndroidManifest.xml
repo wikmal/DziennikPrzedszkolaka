@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weteam.weteam.dziennikprzedszkolaka">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="DzPMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreatePreschoolActivity">
+            <intent-filter>
+                <action android:name="DzPCreatePreschoolActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="DzPSignInActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.PreschoolMenuActivity">
+            <intent-filter>
+                <action android:name="DzPPreschoolMenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".parent.ParentMenuActivity">
+            <intent-filter>
+                <action android:name="DzPParentMenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.TeacherMenuActivity">
+            <intent-filter>
+                <action android:name="DzPTeacherMenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.EditPreschoolActivity">
+            <intent-filter>
+                <action android:name="DzPEditPreschoolActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.CreateTeacherActivity">
+            <intent-filter>
+                <action android:name="DzPCreateTeacherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.GuidesActivity">
+            <intent-filter>
+                <action android:name="DzPGuidesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.EditTeacherActivity">
+            <intent-filter>
+                <action android:name="DzPEditTeacherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.CreatePreschoolGroupActivity">
+            <intent-filter>
+                <action android:name="DzPCreatePreschoolGroupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ViewGroupDetailsActivity">
+            <intent-filter>
+                <action android:name="DzPViewGroupDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.ListOfTeachersActivity">
+            <intent-filter>
+                <action android:name="DzPViewTeachersActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.CreateParentActivity">
+            <intent-filter>
+                <action android:name="DzPCreateParentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ViewParentActivity">
+            <intent-filter>
+                <action android:name="DzPViewParentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PreschoolsInformationActivity">
+            <intent-filter>
+                <action android:name="DzPPreschoolInformationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.EditParent2Activity">
+            <intent-filter>
+                <action android:name="DzPEditParent2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.EditTeacher2Activity">
+            <intent-filter>
+                <action android:name="DzPEditTeacher2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.AddGuideActivity">
+            <intent-filter>
+                <action android:name="DzPAddGuideActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".parent.EditParentActivity">
+            <intent-filter>
+                <action android:name="DzPEditParentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewGuidesActivity">
+            <intent-filter>
+                <action android:name="DzPViewGuidesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewPaymentsActivity">
+            <intent-filter>
+                <action android:name="DzPViewPaymentsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".parent.AddParentNoteActivity">
+            <intent-filter>
+                <action android:name="DzPAddParentNoteActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewScheduleActivity">
+            <intent-filter>
+                <action android:name="DzPViewScheduleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewAnnouncementsActivity">
+            <intent-filter>
+                <action android:name="DzPViewAnnouncementsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.AddAnnouncementActivity">
+            <intent-filter>
+                <action android:name="DzPAddAnnouncementActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.AddPaymentActivity">
+            <intent-filter>
+                <action android:name="DzPAddPaymentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ChangePaymentsActivity">
+            <intent-filter>
+                <action android:name="DzPChangePaymentsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".preschool.EditGuideActivity">
+            <intent-filter>
+                <action android:name="DzPEditGuideActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ParentsNotesActivity">
+            <intent-filter>
+                <action android:name="DzPParentsNotesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.CalendarActivity">
+            <intent-filter>
+                <action android:name="DzPCalendarActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.AddDateActivity">
+            <intent-filter>
+                <action android:name="DzPAddDateActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ViewCalendarActivity">
+            <intent-filter>
+                <action android:name="DzPViewCalendarActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.ScheduleActivity">
+            <intent-filter>
+                <action android:name="DzPScheduleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.EditScheduleActivity">
+            <intent-filter>
+                <action android:name="DzPEditScheduleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacher.CreateScheduleActivity">
+            <intent-filter>
+                <action android:name="DzPCreateScheduleActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".childrenWork.MainChildrenActivity">
+            <intent-filter>
+                <action android:name="DzPMainChildrenActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".childrenWork.ChildrenGallery"
+            android:label="Children Works Gallery"
+            android:parentActivityName=".childrenWork.MainChildrenActivity">
+            <intent-filter>
+                <action android:name="DzPChildrenGallery"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".foodMenu.FoodGallery"
+            android:label="Food Menu Gallery"
+            android:parentActivityName=".foodMenu.MainFoodActivity">
+            <intent-filter>
+                <action android:name="DzPFoodGallery"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".foodMenu.MainFoodActivity">
+            <intent-filter>
+                <action android:name="DzPMainFoodActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

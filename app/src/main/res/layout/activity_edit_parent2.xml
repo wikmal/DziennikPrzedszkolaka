@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weteam.weteam.dziennikprzedszkolaka.teacher.EditParent2Activity"
+    android:background="#A8DFF5">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="casual"
+            android:text="@string/edit_information"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/textViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                >
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/login_s"
+                    android:textColor="@android:color/holo_red_dark"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="@string/name_and_surname_s" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/eLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/eName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="casual"
+                    android:onClick="changeLogin"
+                    android:text="@string/edit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#0090ff"
+                    android:textColor="#FFFFFF"/>
+
+
+                <Button
+                    android:id="@+id/edit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="casual"
+                    android:onClick="changeName"
+                    android:text="@string/edit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#0090ff"
+                    android:textColor="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

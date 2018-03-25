@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weteam.weteam.dziennikprzedszkolaka.MainActivity"
+    android:background="#A8DFF5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToLogin"
+            android:text="@string/log_in"
+            android:background="#0090ff"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:onClick="goToCreatePreschool"
+            android:text="@string/create_new_preschool"
+            android:layout_marginTop="40dp"
+            android:background="#0090ff"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:background="#0090ff"
+        android:onClick="changeLanguagePL"
+        app:srcCompat="@drawable/pl" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/zmien"
+        android:layout_toRightOf="@+id/zmien"
+        android:background="#0090ff"
+        android:onClick="changeLanguageGB"
+        app:srcCompat="@drawable/gb" />
+
+
+</RelativeLayout>

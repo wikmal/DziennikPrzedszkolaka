@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weteam.weteam.dziennikprzedszkolaka.teacher.ViewGroupDetailsActivity"
+    android:background="#A8DFF5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:scrollbars="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                >
+                <EditText
+                    android:id="@+id/enterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:fontFamily="casual"
+                    android:hint="@string/new_name_of_preschool_group_s"
+                    android:imeActionId="6"
+                    android:layout_marginTop="100dp"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="casual"
+                android:onClick="editNameOfPreschoolGroup"
+                android:text="@string/edit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#0090ff"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/viewMembers"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/view_parents"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewMembers" />
+
+            <Button
+                android:id="@+id/announcement"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/add_announcement"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="announcement" />
+
+            <Button
+                android:id="@+id/viewAnnouncements"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/view_announcements"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewAnnouncements" />
+
+            <Button
+                android:id="@+id/changePayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/change_payment_status"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="changePayment"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/addPayment"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/add_payment_in_whole_group"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="addPayment" />
+
+            <Button
+                android:id="@+id/viewPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/view_payment"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="viewPayment"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/parentsNotes"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/parent_s_notes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="showParentsNotes" />
+
+            <Button
+                android:id="@+id/addChildWork"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/children_s_works"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="childWork" />
+
+            <Button
+                android:id="@+id/schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/schedule"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="schedule"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/addParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/add_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="addNewParent"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/editParent"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/edit_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="chooseEditParent" />
+
+            <Button
+                android:id="@+id/deleteParent"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/delete_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="chooseDeleteParent" />
+
+            <Button
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/calendar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="Calendar"
+                android:background="#0090ff"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
